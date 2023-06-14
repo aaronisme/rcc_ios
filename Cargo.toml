@@ -1,0 +1,20 @@
+[package]
+name = "rcc_ios"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "rcc_ios"
+crate-type = ["staticlib"]
+
+
+[dependencies]
+prost = "0.8"
+rcc_signer = "0.1.1"
+hex = "0.4.3"
+thiserror="1.0"
+
+[build-dependencies]
+prost-build = "0.8"
